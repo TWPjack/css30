@@ -2,49 +2,215 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <title>CSS30</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
   <style>
+    html,
     body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-flow: column;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      box-sizing: border-box;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 480px;
+      height: 270px;
+
+    }
+
+    .content {
+      width: 80%;
+      background-color: rgb(255, 129, 129);
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .box {
+      display: none;
+      padding: 1rem;
+    }
+
+    .displayClass {
+      display: block;
     }
   </style>
 </head>
 
 <body>
-  <h1>css30</h1>
-  <ul>
-    <li><a href="https://twpjack.github.io/css30//1%20-%20Fancy%20Buttons/index.html">1 - Fancy Buttons</a></li>
-    <li><a href="https://twpjack.github.io/css30//2%20-%20Sexy%20Typography/index.html">2 - Sexy Typography</a></li>
-    <li><a href="https://twpjack.github.io/css30//3%20-%20Clipping%20Images/index.html">3 - Clipping Images</a></li>
-    <li><a href="https://twpjack.github.io/css30//4%20-%20Sexy%20Registration%20Form/index.html">4 - Sexy Registration
-        Form</a>
-    </li>
-    <li><a href="https://twpjack.github.io/css30//5%20-%20Useful%20Broken%20Images/index.html">5 - Useful Broken
-        Images</a></li>
-    <li><a href="https://twpjack.github.io/css30//6%20-%20Print%20Styles/index.html">6 - Print Styles</a></li>
-    <li><a href="https://twpjack.github.io/css30//7%20-%20Image%20Manipulation/index.html">7 - Image Manipulation</a>
-    </li>
-    <li><a href="https://twpjack.github.io/css30//8%20-%208-bit%20Mario/index.html">8 - 8-bit Mario</a></li>
-    <li><a href="https://twpjack.github.io/css30//9%20-%20Modern%20Layouts/index.html">9 - Modern Layouts</a></li>
-    <li><a href="https://twpjack.github.io/css30//10%20-%20Pricing%20Table/index.html">10 - Pricing Table</a></li>
-    <li><a href="https://twpjack.github.io/css30//11%20-%20IE%20Hacks/index.html">11 - IE Hacks</a></li>
-    <li><a href="https://twpjack.github.io/css30//12%20-%20CSS%20Variables/index.html">12 - CSS Variables</a></li>
-    <li><a href="https://twpjack.github.io/css30//13%20-%20Sticky%20Footer/index.html">13 - Sticky Footer</a></li>
-    <li><a href="https://twpjack.github.io/css30//14%20-%20Sticky%20Header/index.html">14 - Sticky Header</a></li>
-    <li><a href="https://twpjack.github.io/css30//15%20-%20Sticky%20Sidebar/index.html">15 - Sticky Sidebar</a></li>
-    <li><a href="https://twpjack.github.io/css30//16%20-%20Modal%20Window/index.html">16 - Modal Window</a></li>
-    <li><a href="https://twpjack.github.io/css30//17%20-%20Pacman/index.html">17 - Pacman</a></li>
-    <li><a href="https://twpjack.github.io/css30//18%20-%20Tooltips/index.html">18 - Tooltips</a></li>
-    <li><a href="https://twpjack.github.io/css30//19%20-%20Animated%20Progress Bars/index.html">19 - Animated Progress
-        Bars</a></li>
-    <li><a href="https://twpjack.github.io/css30//20%20-%20Animated%20Pyramid/index.html">20 - Animated Pyramid</a></li>
-  </ul>
+  <h1>CSS30</h1>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div id="img01" class="swiper-slide">
+        <a href="https://twpjack.github.io/css30//1%20-%20Fancy%20Buttons/index.html">
+          <img src="https://picsum.photos/480/270/?random=1">
+        </a>
+      </div>
+      <div id="img02" class="swiper-slide">
+        <a href="https://twpjack.github.io/css30//2%20-%20Sexy%20Typography/index.html">
+          <img src="https://picsum.photos/480/270/?random=2">
+        </a>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="content">
+    <div class="detail01 box">
+      <h3>1 - Fancy Buttons</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi sequi. Enim exercitationem
+        dignissimos nihil.</p>
+    </div>
+    <div class="detail02 box">
+      <h3>2 - Sexy Typography</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi sequi. Enim exercitationem
+        dignissimos nihil.</p>
+    </div>
+  </div>
+
+  <!-- <li><a href="https://twpjack.github.io/css30//3%20-%20Clipping%20Images/index.html">3 - Clipping Images</a></li>
+  <li><a href="https://twpjack.github.io/css30//4%20-%20Sexy%20Registration%20Form/index.html">4 - Sexy Registration
+      Form</a>
+  </li>
+  <li><a href="https://twpjack.github.io/css30//5%20-%20Useful%20Broken%20Images/index.html">5 - Useful Broken
+      Images</a></li>
+  <li><a href="https://twpjack.github.io/css30//6%20-%20Print%20Styles/index.html">6 - Print Styles</a></li>
+  <li><a href="https://twpjack.github.io/css30//7%20-%20Image%20Manipulation/index.html">7 - Image Manipulation</a>
+  </li>
+  <li><a href="https://twpjack.github.io/css30//8%20-%208-bit%20Mario/index.html">8 - 8-bit Mario</a></li>
+  <li><a href="https://twpjack.github.io/css30//9%20-%20Modern%20Layouts/index.html">9 - Modern Layouts</a></li>
+  <li><a href="https://twpjack.github.io/css30//10%20-%20Pricing%20Table/index.html">10 - Pricing Table</a></li>
+  <li><a href="https://twpjack.github.io/css30//11%20-%20IE%20Hacks/index.html">11 - IE Hacks</a></li>
+  <li><a href="https://twpjack.github.io/css30//12%20-%20CSS%20Variables/index.html">12 - CSS Variables</a></li>
+  <li><a href="https://twpjack.github.io/css30//13%20-%20Sticky%20Footer/index.html">13 - Sticky Footer</a></li>
+  <li><a href="https://twpjack.github.io/css30//14%20-%20Sticky%20Header/index.html">14 - Sticky Header</a></li>
+  <li><a href="https://twpjack.github.io/css30//15%20-%20Sticky%20Sidebar/index.html">15 - Sticky Sidebar</a></li>
+  <li><a href="https://twpjack.github.io/css30//16%20-%20Modal%20Window/index.html">16 - Modal Window</a></li>
+  <li><a href="https://twpjack.github.io/css30//17%20-%20Pacman/index.html">17 - Pacman</a></li>
+  <li><a href="https://twpjack.github.io/css30//18%20-%20Tooltips/index.html">18 - Tooltips</a></li>
+  <li><a href="https://twpjack.github.io/css30//19%20-%20Animated%20Progress Bars/index.html">19 - Animated Progress
+      Bars</a></li>
+  <li><a href="https://twpjack.github.io/css30//20%20-%20Animated%20Pyramid/index.html">20 - Animated Pyramid</a></li> -->
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+    let mutationObserver01;
+    let mutationObserver02;
+    // let mutationObserver03;
+    // let mutationObserver04;
+    // let mutationObserver05;
+
+
+    mutationObserver01 = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        let t = mutation.target.classList[1];
+        if (t === 'swiper-slide-active') {
+          document.querySelector(".detail01").classList.add("displayClass");
+        } else {
+          document.querySelector(".detail01").classList.remove("displayClass");
+        }
+      });
+    });
+
+    mutationObserver02 = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        let t = mutation.target.classList[1];
+        if (t === 'swiper-slide-active') {
+          document.querySelector(".detail02").classList.add("displayClass");
+        } else {
+          document.querySelector(".detail02").classList.remove("displayClass");
+        }
+      });
+    });
+
+
+    mutationObserver01.observe(document.querySelector('#img01'), {
+      attributes: true,
+      characterData: true,
+      childList: true,
+      subtree: false,
+      attributeOldValue: true,
+      characterDataOldValue: true
+    });
+
+    mutationObserver02.observe(document.querySelector('#img02'), {
+      attributes: true,
+      characterData: true,
+      childList: true,
+      subtree: false,
+      attributeOldValue: true,
+      characterDataOldValue: true
+    });
+
+    // for (Num = 1; Num < 3; Num++) {
+    //   `mutationObserver0${Num}` = new MutationObserver(function (mutations) {
+    //     mutations.forEach(function (mutation) {
+    //       let t = mutation.target.classList[1];
+    //       if (t === 'swiper-slide-active') {
+    //         document.querySelector(`".detail0${Num}"`).classList.add("displayClass");
+    //       } else {
+    //         document.querySelector(`".detail0${Num}"`).classList.remove("displayClass");
+    //       }
+    //     });
+    //   });
+    // }
+
+    // for (Num = 1; Num < 3; Num++) {
+    //   `mutationObserver0${Num}}`.observe(document.querySelector(`"#img0${Num}"`), {
+    //     attributes: true,
+    //     characterData: true,
+    //     childList: true,
+    //     subtree: false,
+    //     attributeOldValue: true,
+    //     characterDataOldValue: true
+    //   });
+    // }
+  </script>
 </body>
 
 </html>
